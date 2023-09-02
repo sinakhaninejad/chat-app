@@ -5,11 +5,11 @@ import { auth } from "../firebase";
 function Signup() {
   const navigate = useNavigate();
 
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const passwordConfirmRef = useRef();
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+  const passwordConfirmRef = useRef(null);
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -21,8 +21,7 @@ function Signup() {
       emailRef.current.value,
       passwordRef.current.value
     )
-      .then((userCredential) => {
-        // const user = userCredential.user;
+      .then(() => {
         setLoading(true);
         setError("");
         navigate("/chat-app/signin");

@@ -8,7 +8,7 @@ function SignIn() {
   const navigate = useNavigate();
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -19,10 +19,10 @@ function SignIn() {
       passwordRef.current.value
     )
       .then((userCredential) => {
-        //signed in
         const userCred = userCredential.user;
         setUser(userCred);
         setLoading(true);
+        console.log(typeof userCred);
         navigate("/chat-app");
       })
       .catch((error) => {
