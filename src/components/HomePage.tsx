@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 //
 import SendMessage from "./SendMessage";
 import MessagesSection from "./MessagesSection";

@@ -3,7 +3,7 @@ import { auth } from "../firebase";
 import { sendPasswordResetEmail } from "firebase/auth";
 
 function ForgotPassword() {
-  const emailRef = useRef();
+  const emailRef = useRef(null);
   const [emailSent, setEmailSent] = useState(false);
 
   const handleSubmit = (e) => {

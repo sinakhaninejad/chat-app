@@ -3,13 +3,9 @@ import { auth } from "../firebase";
 
 function Navbar({ user }) {
   const hadleLogout = () => {
-    signOut(auth)
-      .then(() => {
-        setUser();
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    signOut(auth).catch((error) => {
+      console.log(error);
+    });
   };
 
   return (
