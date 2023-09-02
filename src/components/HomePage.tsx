@@ -8,7 +8,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth, db } from "../firebase";
 
 function HomePage() {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {

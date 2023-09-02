@@ -26,7 +26,7 @@ function MessagesSection({ db, user }) {
       );
       setMessages(sortedMessages);
     });
-    return () => unsubscribe;
+    return unsubscribe;
   }, []);
 
   if (user) {
