@@ -40,14 +40,3 @@ function HomePage() {
 }
 
 export default HomePage;
-{
-  /* <div>
-      {user ? <h1>{user.email}</h1> : <h1>not logged in</h1>}
-      <h1 classNameName="text-3xl">Home Page</h1>
-      {user ? (
-        <button onClick={hadleLogout}>Logout</button>
-      ) : (
-        <a href="/firebase-authentication/signin">log in</a>
-      )}
-    </div> */
-}
