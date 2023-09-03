@@ -1,10 +1,12 @@
-# Food Recipe Website
-This is a Food Recipe website created with React. It provides a platform for users to explore and share delicious recipes.
+# Chat App
+a chat app developed in react using firebase authentication and real time database.
 
 ## Features
--Signup, Signin, restart password functionality.
--a real time chat app thats compatible across devices
--Emoji bar with various emojies
+-Signup, Signin, restart password functionality.    
+
+-a real time chat app thats compatible across devices.   
+
+-Emoji bar with various emojies.   
 
 ## Demo
 [Link to live demo](https://sinakhaninejad.github.io/chat-app/#/chat-app).
