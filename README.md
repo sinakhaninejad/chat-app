@@ -13,7 +13,7 @@ a chat app developed in react using firebase authentication and real time databa
 
 ## Installation
 1.Clone the repository:
-[git clone]((https://github.com/sinakhaninejad/chat-app.git))
+[git clone](https://github.com/sinakhaninejad/chat-app.git)
 
 2.Install dependencies:
 npm install
