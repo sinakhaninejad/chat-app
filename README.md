@@ -2,9 +2,9 @@
 This is a Food Recipe website created with React. It provides a platform for users to explore and share delicious recipes.
 
 ## Features
--Browse through a wide variety of recipes.
--search through foods from all around the world.
--Search for recipes based on ingredients or categories.
+-Signup, Signin, restart password functionality.
+-a real time chat app thats compatible across devices
+-Emoji bar with various emojies
 
 ## Demo
 [Link to live demo](https://sinakhaninejad.github.io/chat-app/#/chat-app).
