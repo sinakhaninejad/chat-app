@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { AuthProvider } from "../contexts/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function SignIn() {
   const navigate = useNavigate();
@@ -116,12 +116,12 @@ function SignIn() {
                 </button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   Don’t have an account yet?{" "}
-                  <a
-                    href="signup"
+                  <Link
+                    to="/chat-app/signup"
                     className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >
                     Sign up
-                  </a>
+                  </Link>
                 </p>
               </form>
             </div>

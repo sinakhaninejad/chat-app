@@ -1,5 +1,6 @@
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
+import { Link } from "react-router-dom";
 
 function Navbar({ user }) {
   const hadleLogout = () => {
@@ -27,7 +28,7 @@ function Navbar({ user }) {
           </button>
         ) : (
           <button className="py-2 px-5 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md">
-            <a href="/chat-app/signin">log in</a>
+            <Link to="signin">log in</Link>
           </button>
         )}
       </div>

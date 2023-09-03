@@ -4,6 +4,7 @@ import EmojiPicker from "emoji-picker-react";
 
 function SendMessage({ user, db }) {
   const [message, setMessage] = useState("");
+  const [input, setInput] = useState(false);
 
   const emojiBoxRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,7 @@ function SendMessage({ user, db }) {
   }
 
   const sendMessage = async (e) => {
+    setInput(true);
     e.preventDefault();
     if (message.trim() === "") {
       return;
@@ -44,6 +46,7 @@ function SendMessage({ user, db }) {
       uid,
     });
     setMessage("");
+    setInput(false);
   };
   return (
     <>
@@ -65,6 +68,7 @@ function SendMessage({ user, db }) {
           <div className="flex-grow ml-4">
             <div className="relative w-full">
               <input
+                disabled={input}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 type="text"
