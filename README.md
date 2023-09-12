@@ -9,7 +9,7 @@ a chat app developed in react using firebase authentication and real time databa
 -Emoji bar with various emojies.   
 
 ## Demo
-may reqire a vpn connection for my dear iranian users because of firebase restriction for iranian ip's!
+may reqire a vpn connection for my dear iranian users because of firebase restriction for iranian ip's!       
 [Link to live demo](https://sinakhaninejad.github.io/chat-app/#/chat-app).
 
 ## Screenshots
